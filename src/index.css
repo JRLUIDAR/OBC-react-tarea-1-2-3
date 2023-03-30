@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.miModal{
+  background-color: rgb( 0 0 0/0.80);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cerrar-modal{
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  top:0px;
+  right: -190px;
+}
+.cerrar-modal:hover{
+  color:red
+}
+
+.mi-form{
+  width: 400px;
+  height: 400px;
+  background-color: white;
+ 
+}
