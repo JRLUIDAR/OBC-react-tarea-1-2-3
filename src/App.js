@@ -5,6 +5,7 @@ import Home from './componets/Home';
 import Clock from './componets/Clock';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import ListaContactos from './componets/contacts/listaContactos';
+import CambiarColor from './componets/CambiarColor';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <a href='/tarea-1-2-3' className='btn btn-primary mx-2'>Tarea 1-2-3</a>
         <a href='/tarea-4-5-6' className='btn btn-primary mx-2'>Tarea 4-5-6</a>
         <a href='/tarea-7-8-9' className='btn btn-primary mx-2'>Tarea 7-8-9</a>
+        <a href='/tarea-10-11-12' className='btn btn-primary mx-2'>Tarea 10-11-12</a>
       </div>
     
       
@@ -30,6 +32,7 @@ function App() {
         <Route  path='/tarea-1-2-3' element={<AComponent/>}/>
         <Route  path='/tarea-4-5-6' element={<Clock/>}/>
         <Route  path='/tarea-7-8-9' element={<ListaContactos/>}/>
+        <Route path='/tarea-10-11-12' element={<CambiarColor/>}/>
      
         
       </Routes>
