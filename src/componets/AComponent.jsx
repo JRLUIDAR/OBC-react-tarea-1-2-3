@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import BComponent from './BComponent';
 import { Contacto } from '../model/Contacto.class';
+import Asincronos from './asincronos';
 
 
 const AComponent = () => {
@@ -20,6 +21,7 @@ const AComponent = () => {
     return (
         <div>
             <BComponent contacto={user} fn={cambiaEstadoUsuario}></BComponent>
+            <Asincronos/>
         </div>
     );
 };

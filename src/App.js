@@ -11,6 +11,7 @@ import Tasks from './componets/tasks';
 import Login from './componets/auth/login';
 import React, { useState, useEffect } from 'react';
 import Register from './componets/auth/register';
+import Jokes from './componets/jokes';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <a href='/tarea-10-11-12' className='btn btn-primary mx-2'>Tarea 10-11-12</a>
         <a href='/tarea-13-14-15' className='btn btn-primary mx-2'>Tarea 13-14-15</a>
         <a href='/tarea-16-17-18' className='btn btn-primary mx-2'>Tarea 16-17-18</a>
+        <a href='/tarea-19-20-21' className='btn btn-primary mx-2'>Tarea 19-20-21</a>
       </div>
     
       
@@ -55,6 +57,7 @@ function App() {
         <Route path='/tarea-16-17-18' element={<Tasks users={users} logged={logged} setLogged={setLogged} />}/>
         <Route path='/login' element={<Login  users={users} logged={logged} setLogged={setLogged}/>} />
         <Route path='/register' element={<Register users={users} setUsers={setUsers}/>}/>
+        <Route path='/tarea-19-20-21' element={<Jokes/>}/>
       </Routes>
     </BrowserRouter>
     </div>
